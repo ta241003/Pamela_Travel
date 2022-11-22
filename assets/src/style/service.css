@@ -1,0 +1,279 @@
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+}
+
+.home{
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(17, 17, 17, 0.7)), to(rgba(17, 17, 17, 0.7))), url(../img/home_image-4.jpg) no-repeat;
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/home_image-4.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+} 
+.flex {
+  display: flex;
+}
+
+.flex1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top {
+  margin-top: 80px;
+}
+
+.mtop {
+  margin-top: 40px;
+}
+
+.heading {
+  text-align: center;
+}
+
+.heading h5 {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  color: #29d9d5;
+  padding-top: 20px;
+}
+
+.heading h2 {
+  color: #24416B;
+  font-size: 45px;
+  font-family: serif;
+  font-weight: bold;
+  margin: 10px 0 20px 0;
+}
+
+.left, .right {
+  width: 50%;
+}
+
+h3 {
+  font-size: 35px;
+  font-family: serif;
+  color: #24416B;
+  margin-bottom: 20px;
+}
+
+button {
+  background: #CC8C18;
+  color: white;
+  padding: 10px 20px;
+  outline: none;
+  border: none;
+  border-radius: 30px;
+}
+
+button i {
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+button span {
+  margin-top: 5px;
+}
+
+p {
+  line-height: 30px;
+  color: #a4a4a4;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.wrapper2 {
+  position: relative;
+  text-align: center;
+}
+
+.wrapper2 .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+  }
+
+.wrapper2 .box {
+  box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
+  padding: 20px;
+  transition: 0.5s;
+}
+
+.wrapper2 i {
+  margin: 10px 0 15px 0;
+  color: rgb(31, 135, 143);
+  font-size: 30px;
+}
+
+.wrapper2 h3 {
+  font-size: 20px;
+}
+
+.wrapper2 span {
+  padding: 10px;
+  background: #F5E8D1;
+  color: rgb(31, 135, 143);
+  border-radius: 50%;
+}
+
+.wrapper2 .box:hover {
+  background: rgb(31, 135, 143);
+  cursor: pointer;
+}
+
+.wrapper2 .box:hover span {
+  background: #fff;
+}
+
+.wrapper2 .box:hover p,
+.wrapper2 .box:hover h3,
+.wrapper2 .box:hover i {
+  color: white;
+}
+
+/* .wrapper2::after {
+  content: '';
+  position: absolute;
+  top: -22%;
+  left: 0;
+  background-image: url("../img/line1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 75px;
+  width: 100%;
+  z-index: 2;
+} */
+
+/*------------wrapper2------------*/
+
+/*------------about---------------*/
+.about .left {
+  padding: 20px;
+}
+
+p {
+  line-height: 30px;
+  color: #a4a4a4;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.about {
+  position: relative;
+  padding-bottom: 70px;
+}
+
+.about .right {
+  position: relative;
+}
+
+.about .right::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #CC8C18;
+  width: 92%;
+  height: 61vh;
+  z-index: -1;
+  margin: 50px;
+  margin-left: 70px;
+}
+
+.about img{
+  margin-top: 4rem;
+}
+
+/*------------room------------*/
+.room {
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+
+.room img {
+  width: 100%;
+  height: 100%;
+  margin-left: 20px;
+}
+
+.room h3 {
+  margin: 0;
+  padding: 0;
+}
+
+/*------------room------------*/
+
+@media only screen and (max-width:768px) {
+
+  /*------------home------------*/
+  .wrapper2 .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /*------------about------------*/
+  .left, .right {
+    width: 100%;
+  }
+
+  .wrapper2::after{
+    display: none;
+  }
+
+  /*------------about------------*/
+
+  /*------------room------------*/
+  .room img {
+    margin: 0;
+    margin-top: 50px;
+  }
+  .room .content {
+    flex-direction: column;
+  }
+
+  /*------------room------------*/
+}
+
+@media only screen and (max-width:512px) {
+  .grid2,
+  .wrapper2 .content{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.slide_image { 
+  background: url(../img/des-2.png);
+  animation: slide 15s infinite;
+  margin-left: 2rem;
+}
+
+@keyframes slide {
+  
+  25%{
+    background: url(../img/des-3.png);
+  }
+  50%{
+    background: url(../img/des-4.png);
+  }
+  70%{
+    background: url(../img/des-7.png);
+  }
+  100%{
+    background: url(../img/des-8.png);
+  }
+
+}

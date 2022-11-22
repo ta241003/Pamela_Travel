@@ -1,0 +1,128 @@
+/* general styling */
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.25;
+}
+
+section {
+    margin-top: 20rem;
+}
+
+.heading_cart-tour {
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    font-family: serif;
+}
+
+table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+}
+
+table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+}
+
+table tr {
+    /* background-color: #f8f8f8; */
+    border: 1px solid #ccc;
+    padding: .35em;
+}
+
+table td {
+    padding: 2rem 0;
+    text-align: center;
+    line-height: 25px;
+    font-size: 25px;
+}
+
+table th {
+    padding: 2rem 0;
+    font-size: 25px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    line-height: 25px;
+    color: #000;
+    background: cadetblue;
+}
+
+.text-danger{
+    color: rgb(213, 41, 41);
+    font-size: 24px;
+    background: bisque;
+    margin-right: 30px;
+}
+
+input{
+    text-align: center;
+}
+
+.input-book{
+    background: bisque;
+    color: rgb(213, 41, 41);
+    font-size: 24px; 
+    cursor: pointer;
+}
+
+/* span{
+    font-size: 13px;
+} */
+
+@media screen and (max-width: 630px) {
+    
+    table {
+    border: 1px solid #ccc;
+    }
+
+    table tr:first-child{
+        display: none;
+    }
+
+    table caption {
+    font-size: 1.3em;
+    }
+    
+    table thead {
+        border: 1px solid #ccc;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+    
+    table tr {
+        border-bottom: 3px solid #ccc;
+        display: block;
+        margin-bottom: .625em;
+    }
+    
+    table td {
+        border-bottom: 1px solid #ccc;
+        display: block;
+        font-size: 18px;
+        text-align: right;
+    }
+    
+    table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    table td:last-child {
+        border-bottom: 0;
+    }
+}
+
+
